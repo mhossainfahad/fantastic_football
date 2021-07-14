@@ -2,20 +2,345 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
 /* Common Styles */
 
 body {
   margin: 0%;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 42px 0;
+}
+
+.flex-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.blue-background-color {
+  background-color: #2d25a0;
+}
+
+/* Header Styles */
+
+.navigation-menu {
+  flex: 1;
+}
+
+.navigation-menu ul {
+  margin: 0%;
+  text-align: left;
+  padding: 0px;
+}
+
+.navigation-menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 36px;
+}
+
+.navigation-menu ul li a {
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.link-button {
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-sign-in-alt {
+  color: white;
+  padding-right: 8px;
 }
 
 /* Top Banner Styles */
 
+.top-banner {
+  padding-top: 25px;
+  padding-bottom: 86px;
+}
+
+.banner-heading h1 {
+  margin: 0%;
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  line-height: 80px;
+}
+
+.watch-button {
+  margin-top: 27px;
+}
+
+.fa-arrow-right {
+  padding-left: 8px;
+}
+
+.banner-image img {
+  transition: transform 1s ease-out;
+}
+
+.banner-image:hover img {
+  transform: scale(1.2);
+}
+.banner-image img {
+  width: 557px;
+  height: 438px;
+}
+
 /* Players Styles */
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 27px;
+  column-gap: 30px;
+  width: 69%;
+  margin: 0% auto;
+}
+
+.players {
+  margin: 70px 0px;
+}
+
+.player-card {
+  /* margin: 0px 30px; */
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-image {
+  width: 100%;
+}
+
+.player-image img {
+  width: 300px;
+  height: 256px;
+}
+
+.player-details h2 {
+  margin: 0%;
+  padding-top: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #18191f;
+}
+
+.player-details p {
+  margin: 0%;
+  padding: 10px 0 33px 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c6c6c;
+  line-height: 26px;
+}
 /* Highlights Styles */
+
+.highlights {
+  margin: 100px 0px 50px 0;
+}
+
+.highlights-details h1 {
+  margin: 0%;
+  font-size: 48px;
+  font-weight: 700;
+  color: #0a0826;
+  line-height: 60px;
+}
+
+.highlights-details p {
+  margin: 3% 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c6c6c;
+  line-height: 28px;
+  padding: right 10px;
+}
+
+.highlights-image img {
+  width: 567px;
+  height: 427px;
+}
 
 /* Football News Styles */
 
+.football-news {
+  background-color: #f3f1ff70;
+  padding: 20px 0;
+}
+.section-title {
+  color: #0a0826;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+}
+.news-card {
+  background-color: white;
+  margin: 10px 45px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.news-image {
+  flex: 1;
+}
+.news-image img {
+  width: 480px;
+  height: 270px;
+}
+
+.news-details h6 {
+  margin: 1% 0px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6c6c6cb7;
+}
+.news-details h3 {
+  margin: 2% 0;
+  color: #0a0826;
+  font-size: 20px;
+  font-weight: 700;
+}
+.news-details p {
+  margin: 1% 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c6c6c;
+}
+
 /* World Ranking Styles */
 
+.world-ranking {
+  padding: 20px 0;
+}
+
+.ranking-card {
+  flex: 1;
+  margin: 10px 15px;
+  padding: 25px 8px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+  background-color: #f3f1ff70;
+}
+
+.rank-title h5 {
+  margin: 2% 0;
+  color: #18191f;
+  font-size: 24px;
+  font-weight: 700;
+  padding-right: 6%;
+  text-align: center;
+  background-color: white;
+}
+
+.rank-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table > thead > tr > th {
+  color: #18191f;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 50px;
+  background-color: white;
+}
+
+table > tbody > tr > td {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
 /* Footer Styles */
+
+footer {
+  padding: 2% 0;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 15%;
+}
+
+.footer-logo span {
+  font-size: 72px;
+  font-weight: 400;
+  font-family: "Niconne", cursive;
+  color: #10437a;
+}
+
+.social-links {
+  padding: 20px 0;
+}
+.social-links a {
+  text-decoration: none;
+  background-color: #e7e7e8;
+  padding: 12px 0px;
+  margin: 0px 14px;
+  border-radius: 30px;
+}
+
+.fa-instagram,
+.fa-dribbble,
+.fa-twitter,
+.fa-youtube {
+  color: #6c6c6c;
+  font-size: 20px;
+  margin: 0 14px;
+  color: #969bab;
+}
+
+.copyright-info h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Media Queries */
+
+/* For Mobile Devices */
+@media screen and (max-width: 688px) {
+  .full-width {
+    width: 0%;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header {
+    display: none;
+  }
+  .top-banner,
+  .blue-background-color {
+    width: 100%;
+  }
+}
